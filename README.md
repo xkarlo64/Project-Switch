@@ -44,3 +44,24 @@ case 5:
 }
 //izvrsava se ispis cetvrtak(dan 4)
 ```
+
+### Naredba DEFAULT
+
+Dopušten je i poseban blok koji ne određuje nijednu vrijednost i koji počinje ključnom riječju **default** umjesto ključnom riječju **case**.
+
+Ako je blok **default** prisutan i ako nijedna od **case** naredbi unutar **switch** petlje nije izvršena, tada se izvršava naredba koja slijedi nakon ključne riječi **default**.
+
+Primjer:
+```
+switch(izraz){
+  case 1:
+      printf("Broj je pozitivan.");
+      break; //Ukoliko je broj pozitivan izvršiti će se naredba pod ovim slučajem
+  case 2:
+      printf("Broj je negativan.");
+      break; //Ukoliko je broj negativan izvršiti će se naredba pod ovim slučajem
+  default;
+      printf("Broj je nula.");
+      //Ukoliko broj nije ni pozitivan ni negativan izvršiti će se naredba nakon default
+}
+```
