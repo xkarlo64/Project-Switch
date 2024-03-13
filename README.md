@@ -140,9 +140,12 @@ Primjer:
 
 int broj = 2;
 if (broj == 1) {
+
     // Kod ako je broj 1
+    
 } else if (broj == 2) {
-    // Kod ako je broj 2
+  // Kod ako je broj 2
+    
 } else if (broj == 3) {
     // Kod ako je broj 3
 } else {
