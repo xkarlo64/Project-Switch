@@ -66,7 +66,7 @@ switch(izraz){
 }
 ```
 
-//Uvesti još nešto prije ovoga (obrisati komentar nakon unosa)
+//Uvesti još nešto prije "Moguće izvedbe naredbe switch" (obrisati komentar nakon unosa)
 ### Moguće izvedbe naredbe switch
   Naredba koja omogućuje izbor ispisa između niza radnji. Možemo je koristit u "raznim" oblicima.
   
