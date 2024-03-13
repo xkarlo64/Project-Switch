@@ -98,6 +98,8 @@ printf("Zna brojati do 5.");
 }
 ```
 C) Naredba switch sa prekidima (naredba break)
+   Break naredbe su stvar izbora i nisu obavezne. Učinak break naredbe je da skače na kraj switch izraza. Ako se izostavi break naredba računalo će nastaviti s izvršavanjem programa, izvršavajući redom naredbe iz slijedećih slučajeva. Moguće je izostaviti čitave grupe izraza s break naredbom i tako dobiti dvije (ili više) oznaka slučaja u jednom redu, čime se omogućava skok na isti skup izraza za različite vrijednosti izraza u switch naredbi.
+
 ```
 int a;
 scanf("%d", &a);
