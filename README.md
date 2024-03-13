@@ -137,23 +137,20 @@ printf("Probaj manji broj.");
 
 Alternativni načini za postizanje sličnog efekta kao **switch** naredba uključuje upotrebu **if-else** naredbi ili čak tablice pokazivača na funkcije za složenije slučajeve.
 Primjer:
-
+```
 int broj = 2;
 if (broj == 1) {
-
-    // Kod ako je broj 1
-    
+  // Kod ako je broj 1
 } else if (broj == 2) {
   // Kod ako je broj 2
-    
 } else if (broj == 3) {
     // Kod ako je broj 3
 } else {
     // Kod za sve ostale slučajeve
 }
-
+```
 Korištenje tablice pokazivača na funkcije:
-
+```
 #include <stdio.h>
 
 void slucaj_1() {
@@ -184,6 +181,7 @@ int main() {
     
     return 0;
 }
+```
 Ovaj primjer radi slično kao i **switch** naredba. Međutim, **switch** naredba je često čišća i može biti efikasnija za čitanje i pisanje koda kada imamo više uslova koje testiramo na istoj varijabli.
 
 
