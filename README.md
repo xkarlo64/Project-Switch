@@ -133,3 +133,55 @@ switch (a){
 printf("Probaj manji broj.");
 }
 ```
+### Alternativni načini korištenja
+
+Alternativni načini za postizanje sličnog efekta kao **switch** naredba uključuje upotrebu **if-else** naredbi ili čak tablice pokazivača na funkcije za složenije slučajeve.
+Primjer:
+#include <stdio.h>
+int main() {
+int x = 2;
+
+if (x == 1) {
+    printf("x is 1\n");
+} else if (x == 2) {
+    printf("x is 2\n");
+} else if (x == 3) {
+    printf("x is 3\n");
+} else {
+    printf("x is not 1, 2, or 3\n");
+}
+
+return 0;
+
+Korištenje tablice pokazivača na funkcije:
+#include <stdio.h>
+void slucaj_1() {
+    printf("Slucaj 1\n");
+}
+void slucaj_2() {
+    printf("Slucaj 2\n");
+}
+void slucaj_3() {
+    printf("Slucaj 3\n");
+}
+int main() {
+    int broj = 2;
+    void (*pokazivac_na_funkciju)() = NULL;
+    // Inicijalizacija tablice pokazivača na funkcije
+    void (*tablica[3])() = {slucaj_1, slucaj_2, slucaj_3};
+    if (broj >= 1 && broj <= 3) {
+        pokazivac_na_funkciju = tablica[broj - 1];
+        pokazivac_na_funkciju();
+    } else {
+        printf("Nepoznat slucaj\n");
+    }
+    
+    return 0;
+}
+Ovaj primjer radi slično kao i **switch** naredba. Međutim, **switch** naredba je često čišća i može biti efikasnija za čitanje i pisanje koda kada imamo više uslova koje testiramo na istoj varijabli.
+
+
+
+
+
+
