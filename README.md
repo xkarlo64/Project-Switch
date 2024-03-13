@@ -189,3 +189,50 @@ Ovaj primjer radi slično kao i **switch** naredba. Međutim, **switch** naredba
 
 
 
+
+### Nedostaci korištenja naredbe switch
+
+Nedostaci korištenja naredbe switch uključuju ograničenja u obradi složenijih tipova podataka kao što su stringovi, nedostatak fleksibilnosti u usporedbi s drugim naredbama poput naredbi if-else, mogućnost zaboravljanja naredbe break i smanjenu čitljivost koda, osobito kada imamo veći broj slučajeva. (Break se koristi nakon svakog case bloka kako bi prekinuli izvršavanje bloka switch nakon izvršavanja određenog case bloka.)
+
+`#include <stdio.h>
+
+void ispisi_dan(int broj) {
+switch (broj) {
+case 1:
+printf("Ponedjeljak\n");
+break;
+case 2:
+printf("Utorak\n");
+break;
+case 3:
+printf("Srijeda\n");
+break;
+case 4:
+printf("Četvrtak\n");
+break;
+case 5:
+printf("Petak\n");
+break;
+case 6:
+printf("Subota\n");
+break;
+case 7:
+printf("Nedjelja\n");
+break;
+default:
+printf("Nepoznat dan\n");
+}
+}
+
+int main() {
+ispisi_dan(1); // Ispisuje "Ponedjeljak"
+ispisi_dan(8); // Ispisuje "Nepoznat dan"
+return 0;
+}`
+Mana switch naredbe u ovom primjeru je to što nije fleksibilna kada je u pitanju rukovanje neočekivanim ili nevažećim ulazima. To može dovesti do grešaka u izvođenju programa. Bilo bi bolje koristiti if-else izjave koje omogućavaju fleksibilnije rješavanje ovakvih problema.
+
+
+
+
+
+
